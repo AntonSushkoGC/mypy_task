@@ -1,0 +1,45 @@
+(venv) (base) antonsushko@anton-sushko-2 mypy_task % mypy probability.py
+Success: no issues found in 1 source file
+(venv) (base) antonsushko@anton-sushko-2 mypy_task % mypy probability.py
+Success: no issues found in 1 source file
+(venv) (base) antonsushko@anton-sushko-2 mypy_task % mypy probability.py
+probability.py:6: error: Unsupported operand types for + ("List[Any]" and "int")
+probability.py:7: error: No overload variant of "product" matches argument types "range", "List[Any]"
+probability.py:7: note: Possible overload variants:
+probability.py:7: note:     def [_T_co, _T1] product(cls, Iterable[_T1]) -> product[Tuple[_T1]]
+probability.py:7: note:     def [_T_co, _T1, _T2] product(cls, Iterable[_T1], Iterable[_T2]) -> product[Tuple[_T1, _T2]]
+probability.py:7: note:     def [_T_co, _T1, _T2, _T3] product(cls, Iterable[_T1], Iterable[_T2], Iterable[_T3]) -> product[Tuple[_T1, _T2, _T3]]
+probability.py:7: note:     def [_T_co, _T1, _T2, _T3, _T4] product(cls, Iterable[_T1], Iterable[_T2], Iterable[_T3], Iterable[_T4]) -> product[Tuple[_T1, _T2, _T3, _T4]]
+probability.py:7: note:     def [_T_co, _T1, _T2, _T3, _T4, _T5] product(cls, Iterable[_T1], Iterable[_T2], Iterable[_T3], Iterable[_T4], Iterable[_T5]) -> product[Tuple[_T1, _T2, _T3, _T4, _T5]]
+probability.py:7: note:     def [_T_co, _T1, _T2, _T3, _T4, _T5, _T6] product(cls, Iterable[_T1], Iterable[_T2], Iterable[_T3], Iterable[_T4], Iterable[_T5], Iterable[_T6]) -> product[Tuple[_T1, _T2, _T3, _T4, _T5, _T6]]
+probability.py:7: note:     def [_T_co] product(cls, Iterable[Any], Iterable[Any], Iterable[Any], Iterable[Any], Iterable[Any], Iterable[Any], Iterable[Any], *iterables: Iterable[Any]) -> product[Tuple[Any, ...]]
+probability.py:7: note:     def [_T_co, _T1] product(cls, *iterables: Iterable[_T1], repeat: int) -> product[Tuple[_T1, ...]]
+probability.py:7: note:     def [_T_co] product(cls, *iterables: Iterable[Any], repeat: int = ...) -> product[Tuple[Any, ...]]
+probability.py:7: error: Unsupported operand types for + ("List[Any]" and "int")
+probability.py:9: error: Unsupported left operand type for ** ("List[Any]")
+probability.py:22: error: Argument 1 to "beating_probability" has incompatible type "int"; expected "List[Any]"
+probability.py:22: error: Argument 2 to "beating_probability" has incompatible type "int"; expected "List[Any]"
+probability.py:22: error: Argument 3 to "beating_probability" has incompatible type "int"; expected "List[Any]"
+probability.py:22: error: Argument 4 to "beating_probability" has incompatible type "int"; expected "List[Any]"
+probability.py:23: error: Argument 1 to "beating_probability" has incompatible type "int"; expected "List[Any]"
+probability.py:23: error: Argument 2 to "beating_probability" has incompatible type "int"; expected "List[Any]"
+probability.py:23: error: Argument 3 to "beating_probability" has incompatible type "int"; expected "List[Any]"
+probability.py:23: error: Argument 4 to "beating_probability" has incompatible type "int"; expected "List[Any]"
+Found 12 errors in 1 file (checked 1 source file)
+(venv) (base) antonsushko@anton-sushko-2 mypy_task % mypy probability.py
+probability.py:13: error: Argument 1 to "gen_dict" has incompatible type "List[Any]"; expected "int"
+probability.py:13: error: Argument 2 to "gen_dict" has incompatible type "List[Any]"; expected "int"
+probability.py:14: error: Argument 1 to "gen_dict" has incompatible type "List[Any]"; expected "int"
+probability.py:14: error: Argument 2 to "gen_dict" has incompatible type "List[Any]"; expected "int"
+probability.py:22: error: Argument 1 to "beating_probability" has incompatible type "int"; expected "List[Any]"
+probability.py:22: error: Argument 2 to "beating_probability" has incompatible type "int"; expected "List[Any]"
+probability.py:22: error: Argument 3 to "beating_probability" has incompatible type "int"; expected "List[Any]"
+probability.py:22: error: Argument 4 to "beating_probability" has incompatible type "int"; expected "List[Any]"
+probability.py:23: error: Argument 1 to "beating_probability" has incompatible type "int"; expected "List[Any]"
+probability.py:23: error: Argument 2 to "beating_probability" has incompatible type "int"; expected "List[Any]"
+probability.py:23: error: Argument 3 to "beating_probability" has incompatible type "int"; expected "List[Any]"
+probability.py:23: error: Argument 4 to "beating_probability" has incompatible type "int"; expected "List[Any]"
+Found 12 errors in 1 file (checked 1 source file)
+(venv) (base) antonsushko@anton-sushko-2 mypy_task % mypy probability.py
+Success: no issues found in 1 source file
+(venv) (base) antonsushko@anton-sushko-2 mypy_task %
